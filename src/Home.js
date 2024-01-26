@@ -17,7 +17,7 @@ const Home = () => {
     const handleCardClick = (movie) => {
         setSelectedTitle(movie.title)
         setSelectedId(movie.id)
-    }
+    };
 
         fetchMovies();
     }, []);
@@ -32,7 +32,9 @@ const Home = () => {
                         return <Card
                                     key={movie.id}
                                     movie={movie}
-                                    onCardClick = {() => handleCardClick(movie)}/>
+                                    onCardClick = {() => handleCardClick(movie)}
+                                    isSelected={movie.id === selectedId}
+                                    />
                     })}
                 </div>
             </div>
