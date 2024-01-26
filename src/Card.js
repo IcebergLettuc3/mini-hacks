@@ -5,7 +5,7 @@ const Card = ({ movie }) => {
     const IMAGE_BASE_URL = 'https://www.themoviedb.org/t/p/w220_and_h330_face';
     return (
         <div>
-            <Link to={"/movies/" + movie.id}>
+            <Link to = '/'>
                 <div className="shadow-md rounded-lg p-4">
                     <img src={IMAGE_BASE_URL + movie.poster_path} alt="" className="w-full h-46 object-cover rounded-lg" />
                     <div className="mt-4">
