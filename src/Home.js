@@ -5,6 +5,12 @@ import { getTrendingMovies } from './utils/request';
 const Home = () => {
     const [movies, setMovies] = useState([]);
 
+    useState(() => {
+        var selectedMovie = async () => {
+            
+        }
+    })
+
     useEffect(() => {
         const fetchMovies = async () => {
             const trendingMovies = await getTrendingMovies();
